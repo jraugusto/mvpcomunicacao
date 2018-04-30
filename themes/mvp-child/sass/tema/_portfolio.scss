@@ -1,0 +1,38 @@
+.portfolio-item h2 a {
+    color: $cor-primaria;
+    font-weight: 700;
+}
+
+.casespag > .items-container > .masonry-item:nth-child(2) {
+
+    margin-top: 50px;
+
+}
+
+.portfolio-item.caption-fixed .title-wrapper {
+
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+
+    & h2 > a {
+
+        color: $branco !important;
+        font-size: 4rem;
+
+    }
+
+    & .category {
+
+        text-align: left;
+
+    }
+
+    & .category li a {
+
+        color: $branco;
+        text-align-last: left;
+
+    }
+
+}

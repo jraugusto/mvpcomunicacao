@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-2875 171.059 49.363 40.694">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0cecce"/>
+      <stop offset="1" stop-color="#0b4eec"/>
+    </linearGradient>
+  </defs>
+  <g id="Symbol_20_1" data-name="Symbol 20 – 1" transform="translate(-3219)">
+    <path id="Path_1" data-name="Path 1" class="cls-1" d="M113.837,77.437H103.693a1.311,1.311,0,0,0-1.474,1.474V93.419a1.311,1.311,0,0,1-1.474,1.474h-8.67A1.311,1.311,0,0,1,90.6,93.419V55.674A1.311,1.311,0,0,1,92.074,54.2h5.78l15.983,17.4Z" transform="translate(253.4 116.859)"/>
+    <path id="Path_2" data-name="Path 2" class="cls-1" d="M134.859,71.6l15.983-17.4h5.78a1.311,1.311,0,0,1,1.474,1.474V93.419a1.311,1.311,0,0,1-1.474,1.474h-8.729a1.311,1.311,0,0,1-1.474-1.474V78.852a1.311,1.311,0,0,0-1.474-1.474H134.8V71.6Z" transform="translate(235.268 116.859)"/>
+  </g>
+</svg>

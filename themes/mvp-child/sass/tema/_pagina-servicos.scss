@@ -1,0 +1,95 @@
+.banner-servicos-text h2 {
+
+
+    @include gradient-padrao (top, $cor-secundaria, $cor-primaria);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40rem;
+    font-weight: 700;
+    line-height: 55rem;
+    margin: -50px;
+    padding: 0;
+
+
+}
+
+.titulo-servicos {
+
+    font-weight: 700;
+    color: $cor-primaria !important;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-size: 10rem !important;
+
+
+}
+
+.menu-servicos {
+
+    margin-left: 30px;
+    border-top: 4px solid $cor-secundaria;
+
+    & li {
+
+        font-size: 4rem;
+        color: $cor-secundaria;
+        font-weight: 700;
+
+        & a {
+
+            color: $cor-secundaria;  
+
+            &:hover {
+
+                color: $cor-primaria;
+                text-decoration: line-through;
+
+            }
+
+        }
+
+
+    }
+
+
+}
+
+.menu-fixed-servicos {
+
+    position: fixed !important;
+    left: -40px;
+    top: 45%;
+    z-index: 5;
+
+    & .module-container {
+
+        left: 40px !important;
+        position: absolute;  
+
+        & .dropdown-list li>a {
+
+            font-weight: 700;
+            color: $cor-primaria;
+
+        }
+
+        & .dropdown-list li>a:hover {
+            background-color: $cor-primaria;
+        }
+
+    }
+
+    & .module-trigger .btn .text {
+
+
+        font-weight: 700;
+
+    }
+
+    & .module-trigger:hover .btn .icon-container i {
+
+        color: $branco;
+
+    }
+
+}

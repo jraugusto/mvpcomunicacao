@@ -1,0 +1,386 @@
+/* Progressbar */
+.progressbar {
+		position: relative;
+		margin-bottom: 30px;
+}
+
+.progressbar-title {
+		position: relative;
+		z-index: 1;
+		display: inline-block;
+}
+
+.progressbar-bar {
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		height: 45px;
+		background-color: #ececec;
+}
+
+.progressbar-bar span {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: inline-block;
+		width: 0;
+		height: inherit;
+		background-color: #f42958;
+}
+
+.progressbar-value {
+		display: inline-block;
+		width: 0;
+		text-align: right;
+}
+
+/* Default
+========================*/
+.progressbar-default {
+		font-size: 12.6px;
+		line-height: 39px;
+}
+
+.progressbar-default .progressbar-title {
+		margin-bottom: 12px;
+}
+
+.progressbar-default .progressbar-value {
+		position: absolute;
+		top: 0;
+		left: 0;
+		color: #999;
+}
+
+.progressbar-default .progressbar-bar {
+		height: 15px;
+}
+
+/* Thin Line
+========================*/
+.progressbar-thin-line {
+		font-size: 12.6px;
+		line-height: 39px;
+}
+
+.progressbar-thin-line .progressbar-title {
+		margin-bottom: 12px;
+}
+
+.progressbar-thin-line .progressbar-value {
+		position: absolute;
+		top: 0;
+		left: 0;
+		color: #999;
+}
+
+.progressbar-thin-line .progressbar-bar {
+		height: 1px;
+}
+
+/* Wide Line
+========================*/
+.progressbar-wide-line {
+		line-height: 54px;
+		color: #fff;
+}
+
+.progressbar-wide-line .progressbar-title {
+		position: absolute;
+		top: 0;
+		left: 20px;
+}
+
+.progressbar-wide-line .progressbar-value {
+		position: absolute;
+		top: 0;
+		left: -10px;
+}
+
+.progressbar-wide-line .progressbar-bar {
+		height: 54px;
+		border-radius: 3px;
+}
+
+/* Outline
+========================*/
+.progressbar-outline {
+		font-size: 12.6px;
+		line-height: 39px;
+		color: #fff;
+}
+
+.progressbar-outline .progressbar-title {
+		position: absolute;
+		top: 0;
+		left: 20px;
+}
+
+.progressbar-outline .progressbar-value {
+		position: absolute;
+		top: 0;
+		left: -10px;
+}
+
+.progressbar-outline .progressbar-bar {
+		height: 39px;
+		border: 1px solid #e9e9e9;
+		border-radius: 3px;
+		background-color: #fff;
+}
+
+/* Line Rounded
+========================*/
+.progressbar-line-rounded {
+		line-height: 81px;
+		color: #fff;
+}
+
+.progressbar-line-rounded .progressbar-title {
+		position: absolute;
+		top: 0;
+		left: 25px;
+}
+
+.progressbar-line-rounded .progressbar-value {
+		position: absolute;
+		top: 0;
+		left: -25px;
+}
+
+.progressbar-line-rounded .progressbar-bar {
+		height: 81px;
+		background-color: transparent;
+}
+
+.progressbar-line-rounded .progressbar-bar span {
+		position: relative;
+		border-radius: 50em;
+}
+
+.progressbar-line-rounded .progressbar-bar span::after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: 100%;
+		content: '';
+		pointer-events: none;
+		background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0)));
+		background: linear-gradient(to right, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* Line Gradient
+========================*/
+.progressbar-line-gradient {
+		font-size: 12.6px;
+		line-height: 66.6px;
+		color: #fff;
+}
+
+.progressbar-line-gradient .progressbar-title {
+		position: absolute;
+		top: 0;
+		left: 20px;
+}
+
+.progressbar-line-gradient .progressbar-value {
+		position: absolute;
+		top: 0;
+		left: -10px;
+}
+
+.progressbar-line-gradient .progressbar-bar {
+		height: 66.6px;
+		border-radius: 3px;
+}
+
+.progressbar-line-gradient .progressbar-bar span {
+		position: relative;
+		top: 4.5px;
+		left: 6px;
+		height: 55.5px;
+		border-radius: 5px;
+}
+
+.progressbar-line-gradient .progressbar-bar span::after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: 100%;
+		content: '';
+		pointer-events: none;
+		background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.35)), to(rgba(255, 255, 255, 0)));
+		background: linear-gradient(to right, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* Outline Hexagon
+========================*/
+.progressbar-outline-hexagon {
+		font-size: 14px;
+		line-height: 36px;
+		color: #fff;
+}
+
+.progressbar-outline-hexagon .progressbar-title {
+		position: absolute;
+		top: 0;
+		left: 20px;
+}
+
+.progressbar-outline-hexagon .progressbar-value {
+		font-size: 14px;
+		position: absolute;
+		z-index: 3;
+		top: 0;
+		left: -6px;
+		color: #777;
+}
+
+.progressbar-outline-hexagon .progressbar-bar {
+		height: 36px;
+		border: 1px solid #ececec;
+		border-radius: 3px;
+		background-color: transparent;
+}
+
+.polygon-container {
+		position: absolute;
+		z-index: 2;
+		top: 50%;
+		left: 4px;
+		-webkit-transform: translateY(-40%);
+		transform: translateY(-40%);
+		width: 0;
+		text-align: right;
+}
+
+.polygon-container svg path {
+		fill: #fff;
+		fill-rule: evenodd;
+		stroke: #f42958;
+		stroke-width: 1px;
+}
+
+/* Outline Hexagon
+========================*/
+.vertical-progressbar {
+		position: relative;
+		display: inline-block;
+		width: calc(16.6666666% - 29px);
+		height: 405px;
+		margin: 0 10px 1em;
+}
+
+.vertical-progressbar .progressbar-title {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		margin-left: 0;
+		-webkit-transform: rotateZ(-90deg) translateY(-50%);
+		transform: rotateZ(-90deg) translateY(-50%);
+		-webkit-transform-origin: top left;
+		transform-origin: top left;
+		font-size: 0.93333em;
+		white-space: nowrap;
+		text-transform: uppercase;
+		letter-spacing: 0.15em;
+		color: #fff;
+}
+
+.vertical-progressbar .progressbar-value {
+		display: block;
+		position: absolute;
+		bottom: 30px;
+		left: 0;
+		right: 0;
+		width: 100%;
+		font-size: 0.93333em;
+		text-align: center;
+		color: #555;
+}
+
+.vertical-progressbar .progressbar-bar {
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+		position: relative;
+		background-color: transparent;
+		border-top: 3px solid #f42958;
+}
+
+.vertical-progressbar .progressbar-bar:before {
+		content: '';
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: #f42958;
+		opacity: 0.12;
+}
+
+.vertical-progressbar .progressbar-bar span {
+		top: auto;
+		bottom: 0;
+		width: 100%;
+		height: 0;
+		letter-spacing: 3px;
+		/* &::after {*/
+		/* 	position: absolute;*/
+		/* 	top: 0;*/
+		/* 	left: 0;*/
+		/**/
+		/* 	display: block;*/
+		/**/
+		/* 	width: 100%;*/
+		/* 	height: 100%;*/
+		/**/
+		/* 	content: '';*/
+		/* 	pointer-events: none;*/
+		/**/
+		/* 	background: linear-gradient(to bottom,  rgba(255,255,255,.5) 0%, rgba(255,255,255,0) 100%);*/
+		/* }*/
+}
+
+.vertical-progressbar:first-child {
+		margin-left: 0;
+}
+
+.vertical-progressbar:last-child {
+		margin-right: 0;
+}
+
+/* Minimal
+========================*/
+.progressbar-minimal {
+		margin-top: 30px;
+		margin-bottom: 55px;
+}
+
+.progressbar-minimal .progressbar-bar {
+		height: 3px;
+		background-color: #e8e8e8;
+}
+
+.progressbar-minimal .progressbar-bar span {
+		background: #4777e6;
+		background: -webkit-gradient(linear, left bottom, left top, from(#4777e6), to(#8d54e9));
+		background: linear-gradient(0deg, #4777e6 0%, #8d54e9 100%);
+}
+
+.progressbar-minimal .progressbar-value,
+.progressbar-minimal .progressbar-title {
+		position: absolute;
+		bottom: 100%;
+		margin-bottom: 5px;
+		font-size: 1em;
+		font-weight: 500;
+		letter-spacing: 0.025em;
+}
+
+/* Responsive*/

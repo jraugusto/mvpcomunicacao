@@ -1,0 +1,128 @@
+// Blog Card
+
+.latest-content-overlap .latest-content {
+    margin-left: 25px;
+}
+
+.latest-default .entry-title a {
+    color: $cor-primaria;
+    font-weight: 700;
+}
+
+.latest-content-overlap .read-more {
+    @include btn-geral();
+
+    &  i {
+
+        display: none;
+
+    }
+}
+
+.meta-sticky-left img+.meta, .meta-sticky-left .aspect-ratio-container+.meta {
+
+    background-color: $cor-primaria;
+    text-align: left;
+
+}
+
+//Blog Card 2 
+
+.post-featured-alt .entry-title {
+    font-size: 20px;
+    line-height: 1.3em;
+    font-weight: 700;
+}
+
+.post-featured-alt .entry-title a:hover {
+
+
+    color: $cor-secundaria !important;
+
+}
+
+// Arquivo Blog
+
+.blog-post .entry-title {
+
+
+    font-weight: 700;
+    line-height: 1.2;
+
+    & a {
+
+        color: $cor-primaria;
+
+        &:hover {
+
+            color: $cor-secundaria !important;
+
+        }
+
+    }
+
+}
+
+.post-date-featured .entry-date {
+    float: left;
+    margin-right: 40px;
+    padding: 0.6em 26px 0.4em;
+    border: 1px solid $cor-primaria;
+    border-radius: 0px;
+    font-size: 2.46154em;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    text-align: center;
+    color: $branco !important;
+    background-color: $cor-primaria
+}
+
+.post-contents > header > .post-info > .comments {
+
+    display: none !important;
+
+}
+
+// Single Post
+
+.blog-post > .post-contents > .entry-content {
+
+    & p {
+
+    text-align: justify;
+
+        & img {
+
+            margin: 0 auto;
+            text-align: center;
+            display: block;
+            margin-top: 50px;
+            margin-bottom: 50px;
+
+        }
+
+    }
+
+    & h1, h2, h3 {
+
+        font-weight: 700;
+        border-top: solid 1px $cinza-light;
+        padding-top: 25px;
+
+    }
+
+}
+
+.blog-nav {
+
+padding: 50px 0px;
+
+    & nav > a.ajax-load-more {
+
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+
+    }
+
+}

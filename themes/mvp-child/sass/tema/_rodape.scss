@@ -1,0 +1,60 @@
+.main-footer {
+
+    background-color: $cor-primaria;
+    color: $branco;
+
+    & a {
+
+        color: $branco;
+        font-weight: 700;
+
+        &:hover {
+
+            color: $cor-secundaria;
+
+        }
+
+    }
+
+}
+
+.social-icon.scheme-white.social-rodape.circle li a {
+
+    background-color: $branco;
+    color: $cor-primaria;
+    opacity: 1;
+
+    &:hover {
+
+        color: $branco;
+        @include gradient-padrao(top, $cor-primaria, $cor-secundaria);
+
+    }
+
+}
+
+#menu-menu-rodape {
+
+    & li {
+
+        border-right: solid 1px $branco; 
+        margin-right: 0; 
+        padding-right: 15px;
+
+        & a:hover {
+
+            text-decoration: underline;
+
+        }
+
+    } 
+
+    & li:last-child {
+
+        border-right: none;
+        margin-right: 0; 
+        padding-right: 0;
+
+    } 
+
+}

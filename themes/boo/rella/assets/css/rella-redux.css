@@ -1,0 +1,173 @@
+.redux-container {
+	max-width: 1200px;
+	overflow: visible;
+}
+
+	.redux-container h1, .redux-container h2, .redux-container h3, .redux-container h4, .redux-container h5, .redux-container h6 {
+		letter-spacing: 0.02em;
+		font-weight: 400;
+		color: #111;
+	}
+	.redux-sidebar {
+		width: 250px
+	}
+	.redux-container #redux-form-wrapper .redux-main {
+		background: #fff;
+		border-left: none;
+		margin-left: 250px;
+	}
+	.redux-container #redux-form-wrapper {
+	    background-color: #23282d;
+	}
+
+	.redux-container .redux-group-tab {
+		padding: 0 30px;
+	}
+
+
+.redux-container .redux-sidebar-head {
+	text-align: center;
+	margin-bottom: 30px;
+	padding: 50px 20px;
+
+	background: rgba(35,40,45,1);
+	background: -moz-linear-gradient(top, rgba(35,40,45,1) 0%, rgba(35,40,45,1) 39%, rgba(59,63,68,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(35,40,45,1)), color-stop(39%, rgba(35,40,45,1)), color-stop(100%, rgba(59,63,68,1)));
+	background: -webkit-linear-gradient(top, rgba(35,40,45,1) 0%, rgba(35,40,45,1) 39%, rgba(59,63,68,1) 100%);
+	background: -o-linear-gradient(top, rgba(35,40,45,1) 0%, rgba(35,40,45,1) 39%, rgba(59,63,68,1) 100%);
+	background: -ms-linear-gradient(top, rgba(35,40,45,1) 0%, rgba(35,40,45,1) 39%, rgba(59,63,68,1) 100%);
+	background: linear-gradient(to bottom, rgba(35,40,45,1) 0%, rgba(35,40,45,1) 39%, rgba(59,63,68,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23282d', endColorstr='#3b3f44', GradientType=0 );
+	color: #fff;
+}
+.rella-redux-logo {
+	display: inline-block;
+	background-image: url(../img/rella-logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 88px;
+	width: 100%;
+	background-position: center;
+}
+.redux-sidebar-head h2 {
+  margin-top: 5px;
+  margin-bottom: 0;
+  color: #fff;
+}
+.redux-sidebar-head h2 span {
+  font-weight: 100;
+  color: #fff;
+}
+
+.redux-container .redux-group-tab > h2,
+.redux-sub-heading h2,
+.redux-container .redux-group-tab .redux-section-title {
+    margin: 3em 0 2em;
+    padding: 8px 15px;
+    background-color: #f4f2f2;
+    line-height: 1.5;
+	font-weight: 600;
+}
+.redux-container .redux-group-tab .redux-section-title {
+	margin: 1em 0;
+	padding-left: 15px !important;
+	display: none;
+}
+.redux-sub-heading .redux-container-raw {
+	padding: 0;
+}
+.redux-sub-heading .redux-container-raw .description {
+	margin-top: 0;
+}
+
+.redux-container #redux-footer {
+    right: inherit !important;
+	background: #e6e6e6 !important;
+}
+
+.redux-container #redux-form-wrapper .form-table th {
+    width: 40% !important;
+}
+.redux-container .redux_field_th {
+	padding-right: 60px;
+}
+.redux-container .redux_field_th .description,
+.redux-container .field-desc {
+	color: #979797;
+}
+.redux-main #redux-sticky #info_bar {
+    background: none;
+    box-shadow: none;
+    padding: 10px;
+}
+.redux-main .expand_options {
+	display:none;
+}
+.redux-main .redux-action_bar .button {
+    height: auto;
+    padding: 8px 17px;
+    border: none;
+    font-size: 11px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    box-shadow: none;
+}
+.redux-main .redux-action_bar .button-primary {
+	background-color: #3675b4;
+}
+.redux-main .redux-action_bar .button:hover {
+    color: #fff;
+	background-color: #777;
+}
+.redux-main .redux-action_bar .button-primary:hover {
+	background-color: #205e9c;
+}
+.redux-main .redux-action_bar .button + .button {
+	margin-left: 10px;
+}
+
+
+
+/** Fields
+***********************/
+.redux-main input[type=text],
+.redux-main input[type=email],
+.redux-main input[type=url],
+.redux-main input[type=password],
+.redux-main input[type=number],
+.redux-main input[type=tel],
+.redux-main input[type=text] {
+
+	padding: 8px;
+	border: 1px solid #d5d5d5;
+	font-size: 14px;
+	letter-spacing: 0.02em;
+	transition: border 0.3s ease;
+}
+
+.redux-main input[type=text]:focus,
+.redux-main input[type=email]:focus,
+.redux-main input[type=url]:focus,
+.redux-main input[type=password]:focus,
+.redux-main input[type=number]:focus,
+.redux-main input[type=tel]:focus,
+.redux-main input[type=text]:focus {
+	border-color: #aaa;
+	outline: none;
+	box-shadow: inset 0 1px 2px rgba( 0, 0, 0, 0.07 );
+}
+.redux-container-ace_editor .ace_editor {
+	border: 1px solid #eee;
+}
+
+.redux-container-typography {
+	min-width: 50px !important
+}
+.redux-container-typography .add-on {
+	display: none !important;
+}
+.redux-main .input-append .add-on, .redux-main .input-prepend .add-on {
+	padding: 7px 7px 8px;
+	border-right: 0;
+}

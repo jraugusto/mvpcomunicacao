@@ -1,0 +1,94 @@
+/* compileExpanded ../css/$1.css*/
+
+// .update-nag,
+// .notice {
+// 	display: none !important;
+// }
+
+@import 'variables';
+@import 'mixins';
+
+@import 'rella-general';
+@import 'rella-dashboard';
+@import 'rella-card';
+@import 'rella-extensions';
+@import 'rella-forms';
+@import 'rella-popup';
+@import 'rella-vc';
+@import 'rella-redux';
+@import 'rella-smily';
+@import 'rella-icon-box';
+@import 'rella-templates';
+
+/**********************
+MEDIA QUERIES
+**********************/
+
+@media all and (max-width: 1500px) {
+	.rella-inline-nav li a {
+		padding-right: 40px;
+		padding-left: 40px;
+	}
+}
+@media all and (max-width: 1360px) {
+	.rella-inline-nav li a {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+}
+@media all and (max-width: 1199px) {
+	.rella-inline-nav li a {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+}
+@media all and (max-width: 991px) {
+	.rella-extension {
+		width: calc(50% - 30px);
+	}
+	.rella-card {
+		width: calc(100% - 30px);
+	}
+	.rella-wrap input[type=text],
+	.rella-wrap input[type=email],
+	.rella-wrap input[type=url],
+	.rella-wrap input[type=password],
+	.rella-wrap input[type=number],
+	.rella-wrap input[type=tel],
+	.rella-wrap input[type=text],
+	.rella-wrap input[type=submit],
+	.rella-wrap button[type=submit] {
+		width: 100%;
+	}
+	.rella-register-form {
+		padding-right: 7%;
+		padding-left: 7%;
+	}
+	.rella-dashboard-title {
+		flex-direction: column;
+		text-align: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+	}
+	.rella-dashboard-title figure {
+		margin-top: 30px;
+	}
+	.rella-dashboard-title .rella-left, .rella-dashboard-title .rella-right {
+		float: none !important;
+	}
+	.rella-inline-nav li {
+		display: block;
+		float: none !important;
+		width: 100%;
+	}
+	.rella-inline-nav li a {
+		display: block;
+		border: none !important;
+	}
+}
+@media all and (max-width: 767px) {
+	.rella-extension {
+		width: calc(100% - 30px);
+	}
+}

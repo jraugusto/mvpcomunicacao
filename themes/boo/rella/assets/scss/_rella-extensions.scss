@@ -1,0 +1,76 @@
+/* main: rella-admin.scss*/
+
+.rella-extensions {
+	font-size: 14px;
+	line-height: 2;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	color: #999;
+}
+.rella-extensions:before, .rella-extensions:after {
+	display: table;
+	content: '';
+}
+.rella-extensions:after {
+	clear: both;
+}
+.rella-extension {
+	float: left;
+	width: calc(33.3333333% - 30px);
+	margin-bottom: 30px;
+	padding-right: 15px;
+	padding-left: 15px;
+	text-align: center;
+}
+.rella-extension-inner {
+	padding: 30px 0 0;
+	border: 5px solid #dedede;
+	background-color: #fff;
+}
+.rella-extensions-title {
+	font-size: 22px;
+	font-weight: 700;
+	margin: .5em 0;
+	color: #111;
+}
+.rella-extension-status {
+	display: inline-block;
+	margin-bottom: 15px;
+	padding: 2px 30px;
+	color: #555;
+	border: 1px solid #ecf0f1;
+}
+.rella-extension-descr {
+	padding-right: 10%;
+	padding-left: 10%;
+}
+.rella-extension-footer {
+	margin-top: 1.5em;
+}
+.rella-extension-footer a {
+	font-weight: 700;
+	display: block;
+	padding: 15px 30px;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	color: #2c3e50;
+	background-color: #ecf0f1;
+}
+.rella-extension-footer a:hover {
+	color: #fff;
+	background-color: #2ecc71;
+}
+.rella-extension.active .rella-extension-inner {
+	border-color: #2ecc71;
+}
+.rella-extension.active .rella-extension-status {
+	color: #fff;
+	border-color: #2ecc71;
+	background-color: #2ecc71;
+}
+.rella-extension.active .rella-extensions-validate {
+	color: #fff;
+	background-color: #2ecc71;
+}

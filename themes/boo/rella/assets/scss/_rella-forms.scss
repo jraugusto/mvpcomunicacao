@@ -1,0 +1,44 @@
+/* main: rella-admin.scss*/
+
+.rella-register {
+	text-align: center;
+}
+.rella-register>h1 {
+	text-align: left;
+}
+.rella-register header {
+	font-size: 20px;
+	padding: 1px;
+	text-align: center;
+	letter-spacing: .02em;
+	border-radius: 3px 3px 0 0;
+}
+.rella-register-form {
+	padding: 3.5% 20%;
+	border: 3px solid #f3f3f3;
+	border-radius: 2px;
+}
+.rella-register-form .title {
+	text-align: center;
+}
+.rella-register-form .title figure {
+	width: 70px;
+	margin: 0 auto 0;
+}
+.rella-register-form .title h2 {
+	font-size: 35px;
+	margin-top: .7em;
+	margin-bottom: 1em;
+}
+.rella-register-form h5 {
+	margin-top: 40px;
+	margin-bottom: 0;
+}
+.rella-register-form .generate-apikey {
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #0091bb;
+}
+.rella-register-form .generate-apikey i {
+	margin-left: 5px;
+}

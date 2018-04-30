@@ -1,0 +1,345 @@
+/* main: rella-admin.scss*/
+
+@import url('https://fonts.googleapis.com/css?family=Karla:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+/**********************
+General Styling
+**********************/
+
+.rella-wrap *, .rella-wrap *:before, .rella-wrap *:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body.toplevel_page_rella, body.rella_page_rella-plugins, body.rella_page_rella-license,body.rella_page_rella-import-demos {
+	background: #fff;
+}
+
+/**********************
+Some shortcodes
+**********************/
+
+.text-gradient {
+	color: #00acaa;
+	background: -webkit-linear-gradient(90deg, $color-accent 0%, lighten($color-accent, 10%) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.bg-gradient {
+	color: #fff;
+	background: -webkit-gradient(linear, left top, right top, from(#0091bb), to(#00acaa));
+	background: linear-gradient(90deg, #0091bb 0%, #00acaa 100%);
+}
+.inline {
+	display: inline-block;
+	vertical-align: top;
+}
+hr {
+	height: 3px;
+	border: none;
+	margin-bottom: 50px;
+	background-color: #ECE5F5;
+}
+
+/**********************
+Rella Labels
+**********************/
+
+.rella-label {
+	font-size: 15px;
+	display: inline-block;
+	margin: 0 30px;
+	padding: 3px 20px 4px;
+	vertical-align: middle;
+	color: #111;
+	border-radius: 4px;
+	background-color: #f2ca41;
+}
+.rella-info {
+	margin-bottom: 70px;
+	padding: 22px 15px;
+	border-radius: 5px;
+}
+.rella-info h4 {
+	margin-bottom: 0;
+}
+.rella-info i {
+	font-size: 25px;
+}
+/**********************
+Rella Rules
+**********************/
+
+.rella-wrap {
+	font-family: 'Poppins', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 2em;
+	max-width: 1400px;
+	margin: 40px 6.5%;
+	color: #a2a2a2;
+}
+#rela-import-loader {
+	background: url(../img/loader.gif);
+	width: 16px;
+	height: 16px;
+	margin: 0 auto;
+}
+.rella-wrap p {
+	font-size: 1em;
+	line-height: 2em;
+}
+.rella-wrap a {
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+	text-decoration: none;
+	color: #000;
+}
+.rella-wrap a:hover {
+	color: $color-accent;
+}
+.rella-wrap .h2, .rella-wrap h2, .rella-wrap .h6, .rella-wrap h6 {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	line-height: 1.5;
+	margin-top: 0;
+	letter-spacing: .02em;
+	color: #111;
+}
+.rella-wrap .h1, .rella-wrap h1 {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 1.5;
+	margin-top: 0;
+	margin-bottom: 1.5em;
+	letter-spacing: .02em;
+	color: #111;
+}
+.rella-wrap .h3, .rella-wrap h3 {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-size: 23px;
+	font-weight: 400;
+	line-height: 1.5;
+	margin-top: 0;
+	letter-spacing: .02em;
+	color: #111;
+}
+.rella-wrap .h4, .rella-wrap h4 {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.5;
+	margin-top: 0;
+	letter-spacing: .02em;
+	color: #111;
+}
+.rella-wrap .h5, .rella-wrap h5 {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-size: 17px;
+	line-height: 1.5;
+	margin-top: 0;
+	letter-spacing: .02em;
+	color: #111;
+}
+.rella-wrap input[type=text], .rella-wrap input[type=email], .rella-wrap input[type=url], .rella-wrap input[type=password], .rella-wrap input[type=number], .rella-wrap input[type=tel], .rella-wrap input[type=text], .rella-wrap input[type=submit], .rella-wrap button[type=submit] {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-size: 17px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 490px;
+	padding: 15px 25px;
+	-webkit-transition: border .3s ease;
+	transition: border .3s ease;
+	letter-spacing: .02em;
+	border: none;
+	border-radius: 3px;
+}
+.rella-wrap input[type=text]:focus, .rella-wrap input[type=email]:focus, .rella-wrap input[type=url]:focus, .rella-wrap input[type=password]:focus, .rella-wrap input[type=number]:focus, .rella-wrap input[type=tel]:focus, .rella-wrap input[type=text]:focus, .rella-wrap input[type=submit]:focus, .rella-wrap button[type=submit]:focus {
+	outline: none;
+}
+.rella-wrap input[type=text], .rella-wrap input[type=email], .rella-wrap input[type=url], .rella-wrap input[type=password], .rella-wrap input[type=number], .rella-wrap input[type=tel] {
+	color: #000;
+	border: 1px solid #e6e6e6;
+	background-color: #f3f3f3;
+}
+.rella-wrap input[type=text]:focus, .rella-wrap input[type=email]:focus, .rella-wrap input[type=url]:focus, .rella-wrap input[type=password]:focus, .rella-wrap input[type=number]:focus, .rella-wrap input[type=tel]:focus {
+	border-color: #aaa;
+}
+.rella-wrap input[type=submit], .rella-wrap button[type=submit] {
+	font-size: 14px;
+	padding: 18px 25px;
+	cursor: pointer;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+}
+.rella-wrap input[type=submit] i, .rella-wrap button[type=submit] i {
+	margin-left: 3px;
+}
+.rella-wrap input[type=submit]:hover, .rella-wrap button[type=submit]:hover {
+	-webkit-transform: translateY(-1px);
+	transform: translateY(-1px);
+	-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+.rella-wrap input[type=submit]:active, .rella-wrap button[type=submit]:active {
+	-webkit-transform: translateY(1px);
+	transform: translateY(1px);
+	-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .2);
+	box-shadow: 0 1px 5px rgba(0, 0, 0, .2);
+}
+.rella-wrap .rella-input-container {
+	margin-bottom: 20px;
+}
+.clearfix:before, .clearfix:after {
+	display: table;
+	content: ' ';
+}
+.clearfix:after {
+	clear: both;
+}
+.rella-left {
+	float: left;
+}
+.rella-right {
+	float: right;
+}
+.rella-align-center {
+	text-align: center !important;
+}
+.bg-seashell {
+	background-color: #f3f3f3;
+}
+.color-white {
+	color: #fff !important;
+}
+.mb-0 {
+	margin-bottom: 0 !important;
+}
+.rella-clearlist {
+	padding: 0;
+	list-style: none;
+}
+.rella-clearlist li {
+	margin-right: 20px;
+}
+.rella-button {
+	font-family: 'Karla', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+	&:hover {
+		-webkit-transform: translate3d(0, 1px, 0);
+		        transform: translate3d(0, 1px, 0);
+	}
+
+	&.btn-block {
+		display: block;
+		width: 100%;
+		padding: 15px 15px;
+		background-color: transparent;
+		border: 2px solid $color-accent;
+		border-radius: 3px;
+		font-size: 12px;
+		font-weight: 900;
+		letter-spacing: 0.08em;
+		text-align: center;
+
+		&:hover {
+			color: #fff;
+			background-color: $color-accent;
+			transform: translate3d(0, -2px, 0);
+		}
+	}
+}
+.rella-button i {
+	font-size: 1em;
+	display: inline-block;
+	-webkit-transition: -webkit-transform .3s ease;
+	transition: -webkit-transform .3s ease;
+	transition: transform .3s ease;
+	transition: transform .3s ease, -webkit-transform .3s ease;
+}
+.rella-button:hover i {
+	-webkit-transform: translateX(3px);
+	transform: translateX(3px);
+}
+.rella-badge {
+	font-size: 14px;
+	float: right;
+	width: 165px;
+	margin: 12px 0 0;
+	padding: 45px 0;
+	text-align: center;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: #fff;
+	border-radius: 4px;
+	background-color: #23282d;
+}
+.rella-badge .text {
+	font-weight: 300;
+	line-height: 1;
+}
+.rella-badge .version {
+	font-size: 42px;
+	font-weight: 600;
+	line-height: 1;
+	margin-top: 10px;
+	letter-spacing: 0;
+}
+.rella-header.align-center {
+	text-align: center;
+}
+.rella-header p {
+	font-size: 19px;
+	font-weight: 400;
+	line-height: 1.6em;
+	min-height: 60px;
+	margin: 1em 0;
+	color: #555d66;
+}
+.rella-header .lead {
+	margin-right: 200px;
+}
+/**********************
+Tabs
+**********************/
+
+.rella-tab-pane {
+	padding-top: 70px;
+}
+.rella-tab-is-active {
+	display: block;
+}
+/**********************
+Notifications
+**********************/
+
+.wrap .notice {
+	padding-top: 5px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+}
+.wrap .notice p {
+	font-size: 1em;
+	line-height: 2em;
+}
+.wrap .notice.notice-alt {
+	color: #777;
+}
+
+/**********************
+WP admin
+**********************/
+#wpcontent {
+	background-color: #f5f6fb;
+}
+.widget-inside .icons-selector .selector-popup {
+	right: 0;
+}

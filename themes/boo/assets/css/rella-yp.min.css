@@ -1,0 +1,308 @@
+/* compileExpanded ../css/$1.css*/
+/*
+* Name:        Rella Yellow Pencil Styles
+* Written by:  Themerella - (http://themerella.com)
+* Version:     1.0.0
+*/
+/* Variables */
+.yp-select-bar {
+  width: 350px;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.yp-select-bar .yp-editor-top {
+  background: #313131;
+  border-radius: 10px 10px 0 0;
+  -webkit-box-shadow: 0 11px 22px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 11px 22px rgba(0, 0, 0, 0.18);
+  z-index: 10;
+}
+
+.yp-select-bar .yp-save-btn {
+  border-radius: 0 10px 0 0;
+}
+
+.yp-select-bar .popover {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.yp-select-bar .popover .popover-title {
+  border-radius: 5px 5px 0 0;
+  padding: 0.75em 1em !important;
+  background-color: #6a52c5;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em;
+}
+
+.yp-select-bar .popover .popover-content {
+  font-size: 13px;
+  font-weight: 400px;
+  line-height: 1.5em;
+  letter-spacing: 0.025em;
+  border: none;
+}
+
+.yp-select-bar .popover .arrow {
+  border-color: transparent !important;
+}
+
+.yp-select-bar .yp-arrow-icon {
+  width: 4px !important;
+  height: 4px !important;
+  right: 19px !important;
+  top: 19px !important;
+  border-radius: 50em;
+  background-color: #6a52c5;
+  -webkit-box-shadow: 0 6px 0 #6a52c5, 0 -6px 0 #6a52c5;
+  box-shadow: 0 6px 0 #6a52c5, 0 -6px 0 #6a52c5;
+}
+
+.yp-select-bar .yp-arrow-icon:before {
+  content: none;
+}
+
+.yp-select-bar .lock-btn {
+  top: 79px;
+}
+
+.yp-select-bar .yp-option-label {
+  margin-bottom: 12px !important;
+  letter-spacing: 0.075em;
+}
+
+.yp-select-bar .yp-border-special {
+  -webkit-transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  -o-transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.yp-select-bar .yp-border-special:hover, .yp-select-bar .yp-border-special.yp-on {
+  border-color: #6a52c5 !important;
+  background-color: #6a52c5 !important;
+}
+
+.yp-select-bar .yp-radio-content > .yp-radio > label {
+  border-color: #ededed !important;
+}
+
+.yp-select-bar .yp-radio label {
+  background-color: #fff !important;
+  border-color: #ededed !important;
+  -webkit-box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.yp-select-bar .yp-radio label:hover {
+  -webkit-box-shadow: 0 8px 20px -1px rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 8px 20px -1px rgba(0, 0, 0, 0.15) !important;
+}
+
+.yp-select-bar .yp-radio:last-child {
+  border-right: 1px solid #ededed !important;
+}
+
+.yp-select-bar .yp-radio.active label {
+  border-color: #6a52c5 !important;
+  background: #6a52c5 !important;
+  -webkit-box-shadow: 0 10px 25px -5px rgba(106, 82, 197, 0.6);
+  box-shadow: 0 10px 25px -5px rgba(106, 82, 197, 0.6);
+}
+
+.yp-select-bar .yp-select-bar + div.yp-radio {
+  z-index: 3;
+}
+
+.yp-select-bar .yp-select-bar + div.yp-radio label {
+  border-left-color: #6a52c5 !important;
+}
+
+.yp-select-bar .yp-btn-action.active {
+  background-color: #6a52c5 !important;
+  -webkit-box-shadow: 0 5px 15px rgba(106, 82, 197, 0.1);
+  box-shadow: 0 5px 15px rgba(106, 82, 197, 0.1);
+}
+
+.yp-select-bar .input-autocomplete,
+.yp-select-bar input.yp-input,
+.yp-select-bar input.wqcolorpicker {
+  background-color: #fff !important;
+  border-color: #fff !important;
+  border-radius: 50em !important;
+  -webkit-box-shadow: 0 10px 35px -5px rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 10px 35px -5px rgba(0, 0, 0, 0.15) !important;
+}
+
+.yp-select-bar .input-autocomplete.active,
+.yp-select-bar input.yp-input.active,
+.yp-select-bar input.wqcolorpicker.active {
+  border-radius: 20px 20px 0 0 !important;
+}
+
+.yp-select-bar .yp-after {
+  margin-top: 15px;
+}
+
+.yp-select-bar .yp-flat-colors,
+.yp-select-bar .yp-nice-colors,
+.yp-select-bar .yp-meterial-colors,
+.yp-select-bar .yp-element-picker {
+  border-radius: 50em !important;
+}
+
+.yp-select-bar .yp-flat-colors.active,
+.yp-select-bar .yp-nice-colors.active,
+.yp-select-bar .yp-meterial-colors.active,
+.yp-select-bar .yp-element-picker.active {
+  background-color: #6a52c5 !important;
+}
+
+.yp-select-bar .input-autocomplete {
+  height: 40px !important;
+  min-height: 40px !important;
+  max-height: 40px !important;
+  padding-left: 20px !important;
+}
+
+.yp-select-bar input.wqcolorpicker {
+  padding: 11px 2px 12px 65px !important;
+}
+
+.yp-select-bar .wqminicolors-swatch-color {
+  height: 40px;
+  width: 50px;
+  border-radius: 20px 0 0 20px;
+}
+
+.yp-select-bar .ui-autocomplete {
+  background-color: #fff !important;
+  border: none !important;
+  border-radius: 0 0 10px 10px !important;
+  -webkit-box-shadow: 0 10px 35px -5px rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 10px 35px -5px rgba(0, 0, 0, 0.15) !important;
+}
+
+.yp-select-bar .ui-autocomplete li {
+  background-color: #fff !important;
+  border-color: #efefef !important;
+}
+
+.yp-select-bar .yp-after-css {
+  background-color: #fff !important;
+  border-color: #ededed !important;
+  -webkit-box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.15) !important;
+}
+
+.yp-select-bar .yp-editor-list {
+  border: none;
+  border-radius: 0 0 10px 10px;
+}
+
+.yp-select-bar .yp-editor-list::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.yp-select-bar .yp-editor-list::-webkit-scrollbar {
+  width: 6px;
+  background-color: #fff;
+}
+
+.yp-select-bar .yp-editor-list::-webkit-scrollbar-thumb {
+  background-color: #cbd2d8;
+}
+
+.yp-select-bar .yp-editor-list li.yp-li-about h3 {
+  padding: 1em 12px !important;
+  height: 80px !important;
+}
+
+.yp-select-bar .wqNoUi-horizontal {
+  height: 10px;
+}
+
+.yp-select-bar .wqNoUi-horizontal .wqNoUi-handle {
+  width: 20px !important;
+  height: 20px !important;
+  top: -5px !important;
+}
+
+.yp-select-bar .wqNoUi-base,
+.yp-select-bar .wqNoUi-origin {
+  border-radius: 20px;
+}
+
+.yp-select-bar .wqNoUi-base {
+  height: 10px;
+  top: 0;
+}
+
+.yp-select-bar .wqNoUi-origin {
+  height: 10px !important;
+  top: 0 !important;
+}
+
+.yp-select-bar .wqNoUi-handle,
+.yp-select-bar .wqNoUi-base {
+  background-color: #6a52c5 !important;
+}
+
+.yp-select-bar .wqNoUi-handle {
+  -webkit-transition: -webkit-box-shadow 0.3s ease;
+  transition: -webkit-box-shadow 0.3s ease;
+  -o-transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+  -webkit-box-shadow: 0 5px 15px rgba(106, 82, 197, 0.2), 0 4px 8px rgba(106, 82, 197, 0.5);
+  box-shadow: 0 5px 15px rgba(106, 82, 197, 0.2), 0 4px 8px rgba(106, 82, 197, 0.5);
+}
+
+.yp-select-bar .wqNoUi-handle:hover, .yp-select-bar .wqNoUi-handle:active {
+  -webkit-box-shadow: 0 10px 25px -1px rgba(106, 82, 197, 0.35), 0 5px 10px rgba(106, 82, 197, 0.8);
+  box-shadow: 0 10px 25px -1px rgba(106, 82, 197, 0.35), 0 5px 10px rgba(106, 82, 197, 0.8);
+}
+
+.yp-content-selected .yp-select-bar {
+  -webkit-box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12) !important;
+  border: none !important;
+}
+
+.yp-select-bar .yp-editor-top .yp-button,
+.html-editor-top-bar .yp-button {
+  background-color: #6a52c5;
+}
+
+.yp-other-pages span {
+  margin-bottom: 0.5em !important;
+}
+
+.yp-other-pages li a {
+  display: inline-block;
+  border-radius: 50em !important;
+  padding: 10px 15px !important;
+  -webkit-transition: -webkit-box-shadow 0.3s ease;
+  transition: -webkit-box-shadow 0.3s ease;
+  -o-transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+  -webkit-box-shadow: 0 8px 20px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px -5px rgba(0, 0, 0, 0.1);
+}
+
+.yp-other-pages li a:hover {
+  -webkit-box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  text-decoration: none !important;
+  z-index: 3;
+}
+
+.yp-other-pages li.active a {
+  background-color: #6a52c5 !important;
+  -webkit-box-shadow: 0 8px 25px rgba(106, 82, 197, 0.4);
+  box-shadow: 0 8px 25px rgba(106, 82, 197, 0.4);
+}

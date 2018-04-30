@@ -1,0 +1,57 @@
+/*
+Theme Name: MVP Child
+Theme URI: http://mvpcomunicacao.com.br/
+Author: MVP Comunicação
+Author URI: http://mvpcomunicacao.com.br/
+Template:  boo
+Description: Agência MVP Comunicação.
+Version: 1.0
+License: GNU General Public License
+License URI: license.txt
+Text Domain: boo-child
+Tags: marketing digital, woocommerce, seo, web, desenvolvimento
+*/
+
+
+// Padrões Tema
+@import "sass/base/variables";
+
+//Menu
+@import "sass/tema/menu";
+
+//Estrutura do Tema
+@import "sass/tema/estrutura";
+
+//Rodape
+@import "sass/tema/rodape";
+
+//home
+@import "sass/tema/home";
+
+//Blog
+@import "sass/tema/blog";
+
+//Porftolio
+@import "sass/tema/portfolio";
+
+//Página Serviços
+@import "sass/tema/pagina-servicos";
+
+//Sidebar
+@import "sass/tema/sidebar";
+
+.gradient-text > .tp-splitted > .tp-wordsplit > .tp-charsplit {
+
+    @include gradient-padrao (top, $cor-secundaria, $cor-primaria);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+#content {
+    padding-top: 0;
+
+}
+
+//Responsive
+@import "sass/responsive/mobile";

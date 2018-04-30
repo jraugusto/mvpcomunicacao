@@ -1,0 +1,481 @@
+.vc_col-has-fill>.vc_column-inner, .vc_row-has-fill+.vc_row-full-width+.vc_row>.vc_column_container>.vc_column-inner, .vc_row-has-fill+.vc_row>.vc_column_container>.vc_column-inner, .vc_row-has-fill+.vc_vc_row>.vc_row>.vc_vc_column>.vc_column_container>.vc_column-inner, .vc_row-has-fill+.vc_vc_row_inner>.vc_row>.vc_vc_column_inner>.vc_column_container>.vc_column-inner, .vc_row-has-fill>.vc_column_container>.vc_column-inner, .vc_row-has-fill>.vc_row>.vc_vc_column>.vc_column_container>.vc_column-inner, .vc_row-has-fill>.vc_vc_column_inner>.vc_column_container>.vc_column-inner, .vc_section.vc_section-has-fill, .vc_section.vc_section-has-fill+.vc_row-full-width+.vc_section, .vc_section.vc_section-has-fill+.vc_section {
+    padding-top: 0;
+}
+
+
+//Buttons
+
+.btn {
+
+    font-weight: 700;
+
+}
+
+.full-btn {
+
+    width: 100%;
+
+}
+
+.btn-default {
+
+border: solid 2px $cor-primaria;
+background: transparent;
+border-radius: 50px;
+
+}
+
+.btn.circle {
+
+    @include btn-geral();
+
+}
+
+//Backgrounds
+
+.bg-azul {
+
+    background-color: $cor-primaria;
+
+}
+
+.bg-cinza {
+
+    background-color: $cinza-bg;
+
+}
+
+.bg-azul {
+
+    background-color: $cor-primaria;
+
+}
+
+.bg-gradient {
+
+    @include gradient-padrao (to top right, $cor-primaria, $cor-secundaria)
+
+}
+
+//Títulos
+
+.titulo-geral {
+
+    & h2{
+
+        letter-spacing: 5px;
+        font-size: 3em;
+
+    }
+
+
+}
+
+.big-text h2{
+
+
+    @include gradient-padrao (top, $cor-secundaria, $cor-primaria);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20rem;
+    font-weight: 700;
+    line-height: 25rem;
+    margin: 0px;
+    padding: 0;
+
+
+}
+
+.pricetable-geral-planos {
+
+    background: $branco !important;
+    margin-bottom: 0;
+
+    & .btn {
+
+        border: solid 2px $cor-primaria;
+        background: transparent;
+        border-radius: 50px;
+        color: $cor-primaria;
+
+        &:hover {
+
+
+            color: $branco;
+
+        }
+
+    }
+
+    & .pricing-table-inner {
+
+        & header {
+
+            & h4 {
+
+                background-color: $cor-primaria;
+                color: $branco;
+
+            }
+
+        }
+
+        & .pricing > .price {
+
+
+            font-size: 2.5rem;
+            color: $cor-primaria;
+            font-weight: 700;
+
+        }
+
+        & .pricing  {
+
+            color: $cinza-dark;
+
+        }
+
+        
+    }
+
+    & .pricing-features li {
+
+        color: $cor-primaria;
+        border-bottom: solid 1px $cinza-bg;
+
+        & i.fa-check{
+
+            color: $cor-secundaria;
+
+        }
+
+        & i.fa-close{
+
+            color: $vermelho-error;
+
+        }
+
+    }
+
+    & .pricing-features {
+
+        padding-top: 25px;
+
+    }
+
+
+}
+
+.pricetable-geral-planos-internas {
+
+    background: $cinza-bg !important;
+
+    & .btn {
+
+        border: solid 2px $cor-primaria;
+        background: transparent;
+        border-radius: 50px;
+        color: $cor-primaria;
+
+        &:hover {
+
+
+            color: $branco;
+
+        }
+
+    }
+
+    & .pricing-table-inner {
+
+        & header {
+
+            & h4 {
+
+                background-color: $cor-primaria;
+                color: $branco;
+
+            }
+
+        }
+
+        & .pricing > .price {
+
+
+            font-size: 2.5rem;
+            color: $cor-primaria;
+            font-weight: 700;
+
+        }
+
+        & .pricing  {
+
+            color: $cinza-dark;
+
+        }
+
+        
+    }
+
+    & .pricing-features li {
+
+        color: $cor-primaria;
+        border-bottom: solid 1px $branco;
+
+        & i.fa-check{
+
+            color: $cor-secundaria;
+
+        }
+
+        & i.fa-close{
+
+            color: $vermelho-error;
+
+        }
+
+    }
+
+    & .pricing-features {
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 0;
+
+    }
+
+
+}
+
+
+.plano-interna-detalhes {
+
+    padding-top: 0 !important;
+    margin-top: 25px;
+
+    & .pricing-table-inner {
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        & .pricing-features {
+
+            margin-top: 0;
+            margin-bottom: 0;
+
+        }
+
+        & .spacing {
+
+            display: none;
+
+        }
+
+    }
+
+}
+
+// Title Espaço 
+
+.section-title-thick, .section-title-thick2 {
+    margin-bottom: 4em;
+}
+
+.anima-bg {
+
+margin-left: 180px !important;
+
+}
+
+// Box Espaços
+
+.box-servicos > .btn {
+
+    color: $branco;
+    bottom: 5%;
+    left: 5%;
+    top: auto;
+    -webkit-transform: none;
+    transform: none;
+
+
+    & span {
+
+        font-size: 5rem;
+        letter-spacing: 0;
+        font-weight: 700;
+        text-align: left;
+
+
+    }
+
+    &:hover {
+
+        color: $cor-secundaria;
+        padding-left: 15px;
+
+
+    }
+
+}
+
+.box-servicos {
+
+
+
+    &:hover {
+
+        z-index: 2;
+        -webkit-box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5) !important;
+        box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5) !important;
+
+    }
+
+}
+
+.banner-especialista {
+
+& h2 {
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+
+}
+
+.half-banner-especialista {
+
+    & h2 {
+    
+        margin-top: 0;
+        margin-bottom: 0;
+    
+    }
+
+    & p {
+
+        color: #fff;
+
+    }    
+    
+}
+
+// Forms
+
+.form-newsletter > .wpb_wrapper > div > div {
+
+    & .pipz-webform {
+
+        & form {
+
+            .pipz-form-group:first-child {
+
+                width: 30%;
+                float: left;
+                display: block;
+                margin-left: 3px;
+                margin-top: 0 !important;
+                margin-bottom: 0 !important;
+
+            }
+
+            .pipz-form-group{
+
+                width: 50%;
+                float: left;
+                display: block;
+                margin-left: 3px;
+                margin-top: 0 !important;
+                margin-bottom: 0 !important;
+
+            }
+
+            .pipz-button-container {
+
+                & .pipz-button {
+
+                    margin-left: 3px;
+
+                }
+
+            }
+
+        }
+
+    }
+
+
+}
+
+.titulo-banner::after {
+
+    content: "";
+    background-color: $branco;
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -50px;
+    z-index: -10;
+    
+    
+    }
+
+.titulo-banner h1 {
+
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: $cor-primaria;
+    line-height: 1.1;
+    font-size: 8rem;
+    z-index: 20 !important;
+
+}
+
+.titlebar-inner h1 {
+    margin-top: 0;
+    margin-bottom: 0.03em;
+    font-size: 4.28571em;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-transform: none;
+    color: $cor-primaria !important;
+}
+
+// box sobre nós
+
+.box-sobrenos {
+
+    & .counter {
+
+        opacity: 0.4;
+
+    }
+
+    & .contents {
+
+        & .icon-container {
+
+            color: $branco;
+
+        }
+
+        & h3 {
+
+            color: $branco;
+            font-weight: 700;
+
+        }
+
+        & p {
+
+            color: $branco;
+
+        }
+        
+    }
+
+}

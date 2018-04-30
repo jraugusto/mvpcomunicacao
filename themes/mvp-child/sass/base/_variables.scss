@@ -1,0 +1,74 @@
+//Cores
+
+$cor-primaria: #0B4EEB;
+$cor-secundaria: #0BE1D0;
+$cinza-light: #DCDCDC;
+$cinza-dark: #3D3D3E;
+$cinza-bg: #FAFAFA;
+$branco: #fff;
+$preto: #000;
+$vermelho-error: #E10B0B;
+
+
+@mixin gradient-padrao ($direcao, $cor-primaria, $cor-secundaria) {
+    background: $cor-primaria;
+    background: -moz-linear-gradient($direcao, $cor-primaria 0%, $cor-secundaria 100%);
+    background: -webkit-linear-gradient($direcao, $cor-primaria 0%, $cor-secundaria 100%);
+    background: linear-gradient($direcao, $cor-primaria 0%, $cor-secundaria 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$cor-primaria', endColorstr='$cor-secundaria',GradientType=0 );
+}
+
+@mixin btn-geral() {
+
+    border-radius: 50em;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: transparent;
+    font-weight: 700;
+    text-align: center;
+    @include gradient-padrao (left, $cor-primaria, $cor-secundaria);
+
+    & span {
+
+        font-weight: 700;
+        color: $branco;
+        padding: 1.1em 2.1em;
+        text-transform: none;
+
+    }
+
+    &:hover {
+
+        -webkit-transform: translateY(-1px);
+        transform: translateY(-1px);
+        border-color: transparent;
+        -webkit-box-shadow: 0 4px 20px -5px rgba(0,0,0,0.5) !important;
+        box-shadow: 0 4px 20px -5px rgba(0,0,0,0.5) !important;
+
+    }
+
+} 
+
+//Tipografia
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i,900,900i');
+
+$font-titulo: 'Poppins', sans-serif;
+
+
+h1, h2, h3, h4, h5, h6 {
+
+    font-family: $font-titulo;
+    font-weight: 700;
+
+}
+
+.h3, .post-content h3, .sidebar .widget h3, h3 {
+    font-weight: 700;
+
+}
+
+.pipz-icon {
+
+    display: none !important;
+
+}

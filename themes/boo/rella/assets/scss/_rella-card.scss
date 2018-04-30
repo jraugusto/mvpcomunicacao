@@ -1,0 +1,332 @@
+/* main: rella-admin.scss*/
+
+.rella-cards-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	margin: 0 -15px;
+	padding: 0;
+	list-style: none;
+
+	&:before,
+	&:after {
+		content: none !important;
+	}
+}
+.rella-card {
+	position: relative;
+	float: left;
+	width: calc(33.3333333% - 30px);
+	margin-right: 15px;
+	margin-bottom: 60px;
+	margin-left: 15px;
+	text-align: center;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 0 40px -5px rgba(#535a7a, 0.1);
+	        box-shadow: 0 0 40px -5px rgba(#535a7a, 0.1);
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+
+	&:before {
+		position: absolute;
+		z-index: 0;
+		top: 0;
+		left: 0;
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		content: '';
+		-webkit-transition: all .3s ease;
+		transition: all .3s ease;
+		opacity: 0;
+		background: linear-gradient(135deg, #00aca9 0%, #0092bb 100%);
+	}
+	p {
+		font-size: 1em;
+		line-height: 2em;
+		padding-right: 7%;
+		padding-left: 7%;
+		margin: 2em 0;
+		color: #596484;
+	}
+
+	&:hover {
+		-webkit-transform: translate3d(0, -3px, 0);
+		        transform: translate3d(0, -3px, 0);
+		-webkit-box-shadow: 0 15px 40px -5px rgba(#535a7a, 0.15);
+		        box-shadow: 0 15px 40px -5px rgba(#535a7a, 0.15);
+	}
+}
+
+.rella-card-inner {
+	height: 100%;
+	position: relative;
+	z-index: 2;
+	padding: 35px 0;
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+.rella-icon-container {
+	display: block;
+	width: 110px;
+	height: 110px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 23px;
+	border-radius: 50em;
+	position: relative;
+	font-size: 45px;
+	line-height: 110px;
+	background-color: rgba($color-accent, 0.1);
+	color: $color-accent;
+
+	i {
+		font-size: 1em !important;
+	}
+	&.floated {
+		display: inline-block;
+		width: 100% !important;
+		height: 100% !important;
+		max-width: none !important;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		overflow: hidden;
+		border-radius: 0;
+
+		figure {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			margin: 0;
+			-webkit-transform: translate3d(50%, -50%, 0);
+			        transform: translate3d(50%, -50%, 0);
+			opacity: 0.2;
+		}
+	}
+}
+
+.rella-icon-container img {
+	width: 100%;
+	height: auto;
+}
+
+.rella-status {
+	display: inline-block;
+	padding: 0.3em 1em 0.35em;
+	border: 1px solid #cbcaca;
+	border-radius: 50em;
+	margin-bottom: 5px;
+	background-color: #fff;
+	font-family: 'Karla';
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.15em;
+	line-height: 1.5;
+	color: #cbcaca;
+}
+
+.rella-status-is-active {
+	border-color: $color-accent;
+	color: $color-accent;
+}
+
+.rella-card-footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	-webkit-transform: translate3d(0, 50%, 0);
+	        transform: translate3d(0, 50%, 0);
+
+	.rella-button {
+		display: inline-block;
+		padding: 14px 30px;
+		line-height: 1.5;
+		position: relative;
+		z-index: 2;
+		background-color: $color-accent;
+		border-radius: 50em;
+		color: #fff;
+		-webkit-box-shadow: 0 15px 35px rgba($color-accent, 0.35), 0 3px 10px -2px rgba($color-accent, 0.5);
+		        box-shadow: 0 15px 35px rgba($color-accent, 0.35), 0 3px 10px -2px rgba($color-accent, 0.5);
+
+		+ .rella-button {
+			border-left: 1px solid rgba(0, 0, 0, .05);
+		}
+		&:hover {
+			color: #fff;
+			-webkit-box-shadow: 0 10px 25px rgba($color-accent, 0.35), 0 1px 7px -2px rgba($color-accent, 0.5);
+			        box-shadow: 0 10px 25px rgba($color-accent, 0.35), 0 1px 7px -2px rgba($color-accent, 0.5);
+		}
+	}
+}
+.rella-card:hover .rella-card-footer:before {
+	opacity: 1;
+}
+.rella-card:hover .rella-card-footer .rella-button+.rella-button {
+	border-color: rgba(255, 255, 255, .15);
+}
+
+.rella-author {
+	margin-bottom: 1.5em;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-weight: 600;
+
+	a {
+		color: inherit;
+	}
+}
+
+.rella-card-is-active .rella-card-footer .rella-button+.rella-button {
+	border-color: rgba(255, 255, 255, .15);
+}
+.rella-card-is-active .rella-status {
+	border-color: $color-accent;
+	color: $color-accent;
+}
+
+.badge {
+	display: inline-block;
+	padding: 2px 20px;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	border-radius: 3px;
+	background-color: #F5EFFC;
+	font-size: 11px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	color: #9D90AF;
+
+	&.bottom {
+		top: auto;
+		bottom: 15px;
+	}
+}
+
+.rella-card-alt {
+	background-color: #fff;
+	border-radius: 5px;
+	margin-bottom: 60px;
+	box-shadow: 0 2px 3px rgba(#000, 0.1);
+
+	.rella-card-inner {
+		padding: 50px 10%
+	}
+	.rella-icon-container {
+		width: auto;
+		height: auto;
+		max-width: 60%;
+		margin-bottom: 2.5em;
+		font-size: inherit;
+		line-height: normal;
+		background-color: transparent;
+
+		figure {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		img[src$=svg] {
+			width: 58px;
+			height: 58px;
+		}
+	}
+	.rella-card-header {
+		margin: 0 auto;
+	}
+	h3 {
+		margin-bottom: 0.5em;
+		font-size: 22px;
+		font-family: 'Avenir', sans-serif;
+		font-weight: 700;
+    letter-spacing: -0.015em;
+		color: $color-accent;
+
+		img {
+			margin-right: 10px;
+			vertical-align: middle;
+		}
+		.ring {
+			display: inline-block;
+			position: relative;
+
+			i {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				font-size: 26px !important;
+				transform: translate3d(-50%, -50%, 0);
+				margin-left: -5px;
+			}
+		}
+	}
+	p {
+		font-size: 14px;
+		line-height: 27px;
+	}
+
+	.rella-card-footer {
+		position: relative;
+		top: auto;
+		bottom: auto;
+		left: auto;
+		transform: none;
+
+		.rella-button {
+			padding: 19px 40px;
+			box-shadow: 0 10px 30px rgba(#000, 0.17);
+		}
+	}
+	&.fullwidth {
+		width: calc( 55% - 30px );
+		margin-left: auto;
+		margin-right: auto;
+
+		h3 {
+			font-size: 40px;
+		}
+		p {
+			font-size: 18px;
+			line-height: 30px;
+		}
+	}
+}
+
+/* RTL */
+
+html[dir="rtl"] {
+
+	.rella-button {
+
+		.fa-angle-right {
+
+			&:before {
+				content: "\f104";
+			}
+		}
+		&:hover {
+
+			i {
+				transform: translate3d(-3px, 0, 0);
+			}
+		}
+	}
+}
+
+@media ( max-width: 991px ) {
+
+	.rella-card {
+		width: 100% !important;
+	}
+}

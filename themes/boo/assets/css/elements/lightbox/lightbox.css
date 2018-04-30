@@ -1,0 +1,239 @@
+@-webkit-keyframes lightbox-line {
+	0% {
+		-webkit-transform: translate(0%, -100%);
+		transform: translate(0%, -100%);
+	}
+	100% {
+		-webkit-transform: translate(0%, 200%);
+		transform: translate(0%, 200%);
+	}
+}
+
+@keyframes lightbox-line {
+	0% {
+		-webkit-transform: translate(0%, -100%);
+		transform: translate(0%, -100%);
+	}
+	100% {
+		-webkit-transform: translate(0%, 200%);
+		transform: translate(0%, 200%);
+	}
+}
+
+.lightbox-video {
+	position: relative;
+}
+
+.lightbox-video .sidetext {
+	width: 10px;
+	position: absolute;
+	bottom: 0;
+	left: -35px;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-perspective: 1200px;
+	perspective: 1200px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.lightbox-video .more {
+	position: relative;
+}
+
+.lightbox-video .more .btn {
+	right: 0;
+	position: absolute;
+	font-size: 0.92857em;
+	line-height: 10px;
+	white-space: nowrap;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	color: #000;
+	opacity: 0.3;
+	-webkit-transform: rotate(-270deg);
+	transform: rotate(-270deg);
+	-webkit-transform-origin: 100% 0;
+	transform-origin: 100% 0;
+}
+
+.lightbox-video .more .btn:after {
+	content: "\f178";
+	font-family: 'FontAwesome';
+	position: relative;
+	color: inherit;
+	font-size: 1em;
+	margin-left: 1em;
+}
+
+.lightbox-video .more .btn:focus, .lightbox-video .more .btn:active, .lightbox-video .more .btn:hover {
+	opacity: 1;
+	-webkit-transform: rotate(-270deg) translate3d(5px, 0, 0) !important;
+	transform: rotate(-270deg) translate3d(5px, 0, 0) !important;
+}
+
+.lightbox-video .hover-line {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 2;
+}
+
+.lightbox-video .hover-line .icon {
+	width: 24px;
+	height: 24px;
+	position: relative;
+	left: calc(50% - 12px);
+	top: calc(50% - 12px);
+	color: #fff;
+	font-size: 24px;
+}
+
+.lightbox-video .hover-line .line {
+	position: absolute;
+	width: 1px;
+	height: 100%;
+	top: 0;
+}
+
+.lightbox-video .hover-line .line:before, .lightbox-video .hover-line .line:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 1px;
+	height: 100%;
+	background: #fff;
+}
+
+.lightbox-video .hover-line .line:before {
+	opacity: 0.2;
+}
+
+.lightbox-video .hover-line .line:after {
+	top: -100%;
+}
+
+.lightbox-video .hover-line .line.left {
+	left: 33%;
+}
+
+.lightbox-video .hover-line .line.right {
+	left: 67%;
+}
+
+.lightbox-video .hover-line .line.right:before {
+	left: 67%;
+}
+
+.lightbox-video .lightbox-link {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 4;
+}
+
+.lightbox-video figure {
+	position: relative;
+	overflow: hidden;
+}
+
+.lightbox-video figure img {
+	width: 100%;
+	height: auto;
+	visibility: hidden;
+}
+
+.lightbox-video figure:hover .line:after {
+	-webkit-animation: lightbox-line 1.5s infinite;
+	animation: lightbox-line 1.5s infinite;
+}
+
+.lightbox-video figure:hover .line.right:after {
+	-webkit-animation-delay: 0.75s;
+	animation-delay: 0.75s;
+}
+
+.lightbox-video [data-parallax-bg] {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	background-position: center top;
+}
+
+.lightbox-video [data-parallax-bg] .parallax-img-container {
+	width: 120%;
+}
+
+.lightbox-video [data-parallax-bg] .section-parallax-img {
+	width: auto;
+	height: 118% !important;
+	max-width: none;
+	visibility: visible;
+	-webkit-transition: none;
+	transition: none;
+	font-family: inherit;
+	/* transition: all 0.6s cubic-bezier(0,0,.2,1);*/
+}
+
+.lightbox-video [data-parallax-bg] .parallax-img-parent,
+.lightbox-video [data-parallax-bg] .parallax-img-container {
+	height: 100% !important;
+	max-height: 100% !important;
+}
+
+.mfp-fade.mfp-bg {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out;
+	transition: all 0.15s ease-out;
+}
+
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: 0.8;
+}
+
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+	opacity: 0;
+	-webkit-transition: all 0.6s cubic-bezier(0.26, 0.98, 0.53, 0.99);
+	transition: all 0.6s cubic-bezier(0.26, 0.98, 0.53, 0.99);
+}
+
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	opacity: 1;
+}
+
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	opacity: 0;
+}
+
+.mfp-content .video-popup > .wp-video {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Media Queries*/
+@media (max-width: 991px) {
+	.lightbox-video [data-parallax-bg] .parallax-img-container {
+		width: 100%;
+	}
+	.lightbox-video [data-parallax-bg] .section-parallax-img {
+		height: 100% !important;
+	}
+}

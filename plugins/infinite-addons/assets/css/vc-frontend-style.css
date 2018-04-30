@@ -1,0 +1,149 @@
+body, html,
+body.overflow-hidden {
+	overflow: visible !important;
+}
+
+.vc_welcome-brand {
+	display: none !important;
+}
+
+.vc_welcome:not(.vc_not-empty) {
+	padding-top: 5em;
+	padding-bottom: 5em;
+	background-color: #f5f5f5;
+}
+.vc_welcome .vc_welcome-header {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	line-height: 1.5em;
+	letter-spacing: -0.014em;
+	text-transform: none;
+	color: #2a2a2a;
+}
+.vc_welcome .vc_ui-button {
+	padding: 1.1em 2.5em;
+	border-radius: 50em;
+	background-color: #fff;
+	color: #020202;
+	box-shadow: 0 2px 50px rgba(0, 0, 0, 0.07);
+}
+.vc_welcome .vc_ui-button:hover {
+	background-color: #6f14f1;
+}
+.vc_welcome .vc_ui-button i {
+	color: inherit;
+	font-family: 'fontAwesome';
+}
+.vc_welcome .vc_ui-button i:before {
+	background: none;
+}
+.vc_welcome .vc_ui-button i.vc_ui-icon-pixel-control-plus:before {
+	content: '\f067';
+}
+.vc_welcome .vc_ui-button i.vc_ui-icon-pixel-control-edit:before {
+	content: '\f031';
+}
+.vc_welcome .vc_ui-button i.vc_ui-icon-pixel-control-template:before {
+	content: '\f00a';
+}
+.vc_welcome .vc_ui-button:hover {
+	transform: translate3d(0, -2px, 0);
+	box-shadow: 0 8px 50px rgba(0, 0, 0, 0.15);
+	color: #fff;
+}
+
+/* Modifying some defaults */
+.compose-mode .vc_vc_row>.vc_parallax,
+.compose-mode .vc_vc_row>[data-vc-full-width=true],
+.compose-mode .vc_vc_row_inner,
+.compose-mode .vc_vc_section>.vc_parallax,
+.compose-mode .vc_vc_section>[data-vc-full-width=true],
+.compose-mode .vc_vc_video {
+	padding-top: 0;
+}
+
+/* VC Controlls */
+.compose-mode .vc_controls-container .vc_controls-out-tl {
+	top: 0;
+	left: auto;
+	right: -1px;
+}
+.compose-mode .vc_controls > div,
+.compose-mode .vc_controls-row > div,
+.compose-mode .vc_controls-column > div {
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+.compose-mode .vc_controls>.vc_controls-out-tl {
+	top: 0;
+}
+.compose-mode .vc_vc_column_inner .vc_controls>.vc_controls-out-tl {
+	top: 30px;
+}
+
+.compose-mode .vc_controls>.vc_controls-cc {
+	background-color: #FF5F5F;
+}
+.compose-mode .vc_control-btn .vc_btn-content:hover,
+.compose-mode .vc_child-element-move .vc_btn-content:hover,
+.compose-mode .vc_element-move .vc_btn-content:hover {
+	background-color: #b72f2f;
+}
+.compose-mode .vc_controls-column>div>.vc_parent .vc_btn-content,
+.compose-mode .vc_controls-column>div>.vc_parent .vc_control-btn .vc_btn-content,
+.compose-mode .vc_controls-container>div>.vc_parent .vc_btn-content,
+.compose-mode .vc_controls-container>div>.vc_parent .vc_control-btn .vc_btn-content,
+.compose-mode .vc_controls-row>div>.vc_parent .vc_btn-content,
+.compose-mode .vc_controls-row>div>.vc_parent .vc_control-btn .vc_btn-content {
+	background-color: #5b34ff;
+	border-color: #5b34ff;
+}
+
+.compose-mode .vc_controls-column>div .vc_btn-content,
+.compose-mode .vc_controls-container>div .vc_btn-content,
+.compose-mode .vc_controls-row>div .vc_btn-content {
+	background-color: #17b98a;
+	border-color: #17b98a;;
+}
+.compose-mode .vc_controls-bc {
+	box-shadow: none !important;
+}
+.compose-mode .vc_control-btn-append:before {
+	border-bottom-color: #17b98a;
+	left: -7px;
+}
+.compose-mode .vc_control-btn-append:hover:before {
+	border-bottom-color: #1e7259;
+}
+.compose-mode .vc_controls-column>div .vc_control-btn .vc_btn-content:hover,
+.compose-mode .vc_controls-container>div .vc_control-btn .vc_btn-content:hover,
+.compose-mode .vc_controls-row>div .vc_control-btn .vc_btn-content:hover {
+	background-color: #1e7259;
+	border-color: #1e7259;
+}
+
+
+/* Fixing Rella Shortcodes issues */
+.flickity-slider .vc_element > div[class*=col] > div[class*=col] {
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* RTL */
+html[dir="rtl"] {
+
+	.compose-mode .vc_controls-column>div>.vc_parent>:first-child .vc_btn-content,
+	.compose-mode .vc_controls-container>div>.vc_parent>:first-child .vc_btn-content,
+	.compose-mode .vc_controls-row>div>.vc_parent>:first-child .vc_btn-content {
+		border-radius: 0 3px 3px 0;
+	}
+}
+
+/* to prevent columns being hidden in frontend editor */
+@media (min-width: 992px) {
+
+	.vc_container-block [data-parallax-from*='"opacity": 0'],
+	.vc_container-block [data-parallax-from*='"opacity":0'] {
+    opacity: 1;
+	}
+}

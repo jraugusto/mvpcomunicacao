@@ -1,0 +1,73 @@
+.box-servicos-home {
+
+    & .icon-container {
+
+        & svg {
+
+            fill: $branco;
+
+        }
+
+
+    }
+
+    & .contents > h3 {
+
+
+        color: $branco;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 1.5rem;
+
+    }
+
+    & .contents > .counter-element  {
+
+
+        display: block;
+        margin-top: 0;
+        font-size: 10rem;
+        line-height: 1.5em;
+        font-weight: 700;
+        color: $branco;
+
+
+    }
+
+}
+
+.box-especialista {
+
+    margin-top: 80px;
+
+    & h1 {
+
+        color: $cor-primaria;
+        font-size: 4.5rem;
+        font-weight: 900;
+        margin-top: 0;
+
+    }
+
+    & h3 {
+
+        color: $cor-primaria;
+        font-size: 3rem;
+        font-weight: 300;
+        margin-bottom: 0;
+
+
+    }
+
+}
+
+.rella-self-hosted-row-bg {
+    display: block;
+    width: 100%;
+    padding-bottom: 760px;
+    position: absolute;
+    top: -10px;
+    left: 0;
+
+}

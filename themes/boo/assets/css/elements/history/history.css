@@ -1,0 +1,229 @@
+/* History */
+.history-inner {
+	overflow: hidden;
+}
+
+.history-box {
+	position: relative;
+}
+
+.history-item {
+	position: relative;
+}
+
+.history-item h3, .history-item h3 a {
+	color: #000;
+}
+
+/* Circle
+========================*/
+.history-circle {
+	overflow: hidden;
+	padding: 7.33333em 0 6.66667em;
+	padding: 0;
+}
+
+.history-circle .bar {
+	display: inline-block;
+	width: 7px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	z-index: 0;
+	margin-left: -4px;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#a6dd6b), to(#35dece));
+	background-image: linear-gradient(to bottom, #a6dd6b 0%, #35dece 100%);
+}
+
+.history-circle .history-date {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateY(-50%) translateX(-50%);
+	transform: translateY(-50%) translateX(-50%);
+	display: inline-block;
+	margin-top: -2.33333em;
+	margin-left: -1px;
+}
+
+.history-circle .history-item {
+	margin-bottom: 0;
+	padding-bottom: 3em;
+	width: 100%;
+}
+
+.history-circle .history-item .aspect-ratio-container {
+	max-width: none !important;
+	max-height: none !important;
+}
+
+.history-circle .history-item .aspect-ratio-fill {
+	padding: 0 !important;
+}
+
+.history-circle .history-item .progressive__img {
+	position: relative;
+	top: auto;
+	left: auto;
+}
+
+.history-circle .history-item figure {
+	float: left;
+	width: 50%;
+	padding-right: 95px;
+	padding-left: 8%;
+	text-align: right;
+}
+
+.history-circle .history-item img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+.history-circle .history-item h3 {
+	margin-top: 0.2em;
+	margin-bottom: 0.9em;
+	font-size: 1.66667em;
+}
+
+.history-circle .history-item:nth-child(even) .history-content {
+	float: left;
+	padding-right: 95px;
+	padding-left: 8%;
+	text-align: right;
+}
+
+.history-circle .history-item:nth-child(even) figure {
+	float: right;
+	padding-right: 8%;
+	padding-left: 95px;
+	text-align: left;
+}
+
+.history-circle .history-item:first-child {
+	padding-top: 9em;
+}
+
+.history-circle .history-item:first-child .history-date {
+	margin-top: 2.5em;
+}
+
+.history-circle .history-item:last-child {
+	padding-bottom: 9em;
+}
+
+.history-circle .history-item:last-child .history-date {
+	margin-top: -4.5em;
+}
+
+.history-circle .history-content {
+	float: right;
+	width: 50%;
+	padding-right: 8%;
+	padding-left: 95px;
+}
+
+.history-circle .history-content p {
+	font-size: 1em;
+	line-height: 1.88235294em;
+}
+
+.history-circle .history-date {
+	height: 78px;
+	width: 78px;
+	border: 7px solid #ffca79;
+	border-radius: 50em;
+	background-color: #fff;
+	font-size: 0.93333em;
+	line-height: 64px;
+	color: #c1c1c1;
+	z-index: 2;
+	letter-spacing: -0.025em;
+}
+
+/* Horizontal
+========================*/
+.tabs-history .history-item {
+	text-align: center;
+}
+
+.tabs-history .history-item .history-content .icon {
+	background: #f42958;
+	color: #fff;
+	font-size: 28px;
+	height: 2.3em;
+	width: 2.3em;
+	line-height: 2.3em;
+	text-align: center;
+	border-radius: 100px;
+	margin-bottom: 30px;
+}
+
+.tabs-history .history-item .history-date {
+	color: #f42958;
+	font-size: 28px;
+	display: block;
+	margin-bottom: 39px;
+	font-weight: 700;
+}
+
+.tabs-history .history-item h3, .tabs-history .history-item h4 {
+	margin-bottom: 42px;
+	font-weight: 700;
+}
+
+.tabs-history .history-item .history-inner > figure {
+	text-align: center;
+	float: right;
+	width: 50%;
+	display: inline-block;
+}
+
+.tabs-history .history-item .history-content {
+	float: left;
+	width: 50%;
+	display: inline-block;
+}
+
+@media (max-width: 991px) {
+	.history-circle .history-item:first-child {
+		padding-top: 2.14286em;
+	}
+	.history-circle .history-item:first-child .history-date {
+		top: 6px;
+	}
+	.history-circle .history-item:last-child {
+		padding-bottom: 2.33333em;
+	}
+	.history-circle .history-item:last-child .history-date {
+		margin-top: 0;
+	}
+	.history-circle .history-item:nth-child(even) .history-content,
+	.history-circle .history-item:nth-child(even) figure,
+	.history-circle .history-item:nth-child(odd) .history-content,
+	.history-circle .history-item:nth-child(odd) figure {
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+	.history-circle .history-item:nth-child(even) figure,
+	.history-circle .history-item:nth-child(odd) figure {
+		margin-bottom: 2.14286em;
+	}
+	.history-circle .bar {
+		display: none;
+	}
+	.history-circle .history-date {
+		top: 0;
+		left: auto;
+		right: 0;
+		margin: 0;
+	}
+	.history-circle .aspect-ratio-container {
+		max-width: none !important;
+		max-height: none !important;
+	}
+}

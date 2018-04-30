@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="61px" viewBox="0 0 58 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>ICON</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dashboard" transform="translate(-655.000000, -578.000000)">
+            <g id="Content" transform="translate(161.000000, 93.000000)">
+                <g id="Documentation" transform="translate(381.000000, 443.861978)">
+                    <g id="ICON" transform="translate(113.000000, 42.000000)">
+                        <rect id="Rectangle" fill="#6C00FF" x="0" y="0" width="58" height="60" rx="2"></rect>
+                        <path d="M45.8980435,21 L12.1019565,21 C11.4931878,21 11,20.3284894 11,19.5 C11,18.6715106 11.493317,18 12.1019565,18 L45.8980435,18 C46.5068122,18 47,18.6715106 47,19.5 C47,20.3284894 46.5065539,21 45.8980435,21 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                        <path d="M34.2653623,31 L11.7346377,31 C11.3287919,31 11,30.3284894 11,29.5 C11,28.6715106 11.328878,28 11.7346377,28 L34.2653623,28 C34.6712081,28 35,28.6715106 35,29.5 C35,30.3284894 34.6710359,31 34.2653623,31 Z" id="Shape-Copy-2" fill="#FFFFFF" fill-rule="nonzero"></path>
+                        <path d="M40.0817029,41 L11.9182971,41 C11.4109899,41 11,40.3284894 11,39.5 C11,38.6715106 11.4110975,38 11.9182971,38 L40.0817029,38 C40.5890101,38 41,38.6715106 41,39.5 C41,40.3284894 40.5887949,41 40.0817029,41 Z" id="Shape-Copy-3" fill="#4AE4C6" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

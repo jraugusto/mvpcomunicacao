@@ -1,0 +1,83 @@
+// Menu Principal
+.main-nav {
+
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+
+    & li {
+
+
+        & a {
+
+            font-weight: 700;
+            color: $cor-primaria;
+
+            &:hover {
+
+                color: $cor-secundaria !important;
+
+            }
+
+        }
+
+
+    }
+
+}
+
+.headroom--not-top.light-bg-sticky {    
+
+    & li {
+
+        & a {
+
+            color: $cor-primaria !important;
+
+            &:hover {
+        
+                color: $cor-secundaria !important;
+        
+            }
+
+
+        }
+
+    }
+
+
+
+}
+
+.main-nav .children>li>a:hover, .main-nav .children .menu-item>a:hover, .nav-item-children>li>a:hover, .nav-item-children .menu-item>a:hover {
+    background-color: transparent;
+}
+
+
+
+.navbar-brand {
+
+    margin-left: 30px;
+    border-right: solid 1px $cinza-light;
+
+}
+
+.header-module .social-icon.scheme-dark.circle li a {
+
+    background-color: $cor-primaria;
+    color: $branco;
+    opacity: 1;
+
+    &:hover {
+
+
+        @include gradient-padrao (top, $cor-primaria, $cor-secundaria);
+        color: $branco;
+             
+    }
+
+}
+
+.headroom--not-top.light-bg-sticky .social-icon li a {
+    color: $branco !important;
+}

@@ -1,0 +1,147 @@
+/* main: rella-admin.scss*/
+
+#rella-smily-loader {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	visibility: none;
+	z-index: -1;
+	background-color: none;
+	-webkit-transition: background-color 600ms;
+	transition: background-color 600ms;
+
+	.text {
+		position: fixed;
+		top: -100px; left: 0;
+		bottom: 0; right: 0;
+		margin: auto;
+		width: 100%;
+		height: 30px;
+		font-size: 22px;
+		font-weight: 600;
+		text-align: center;
+		color: #fff;
+		opacity: 0;
+		-webkit-transition: all 300ms linear 2s;
+		transition: all 300ms linear 2s;
+
+	}
+	&.is-active {
+		-webkit-transition: background-color 600ms;
+		transition: background-color 600ms;
+		background-color: $body-bg;
+		visibility: visible;
+		z-index: 99;
+
+		.text {
+			-webkit-transition: all 300ms linear 2s;
+			transition: all 300ms linear 2s;
+			opacity: 1;
+		}
+		.mouth {
+			-webkit-animation: mouthAnimation 3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+			        animation: mouthAnimation 3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+			-webkit-animation-iteration-count: 1;
+			        animation-iteration-count: 1;
+		}
+		.leftEye,
+		.rightEye {
+			width: 2vh;
+			height: 2vh;
+			border-radius: 50%;
+			background: $shape-color;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			        transform: translate(-50%, -50%);
+			-webkit-animation: rightEyeAnimation 3s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955);
+			        animation: rightEyeAnimation 3s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955);
+		}
+		.leftEye {
+			-webkit-transform: translate(-150%, -50%);
+			        transform: translate(-150%, -50%);
+		}
+		.rightEye {
+			-webkit-transform: translate(50%, -50%);
+			        transform: translate(50%, -50%);
+		}
+		.mouth {
+			width: 10vh;
+			height: 10vh;
+			border-radius: 50%;
+			border: solid 1.3vh $shape-color;
+			border-right: solid 1.3vh rgba(223, 223, 194, 0);
+			border-left: solid 1.3vh rgba(223, 223, 194, 0);
+			border-bottom: solid 1.3vh rgba(223, 223, 194, 0);
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%) rotate(900deg);
+			        transform: translate(-50%, -50%) rotate(900deg);
+		}
+	}
+}
+
+@include keyframes(mouthAnimation) {
+	0% {
+		-webkit-transform: translate(-50%, -50%) rotateX(180deg);
+		        transform: translate(-50%, -50%) rotateX(180deg);
+	}
+	10% {
+		-webkit-transform: translate(-50%, -50%) rotateZ(360deg);
+		        transform: translate(-50%, -50%) rotateZ(360deg);
+	}
+	40% {
+		-webkit-transform: translate(-50%, -50%) rotateZ(320deg);
+		        transform: translate(-50%, -50%) rotateZ(320deg);
+	}
+	60% {
+		-webkit-transform: translate(-50%, -50%) rotateZ(900deg);
+		        transform: translate(-50%, -50%) rotateZ(900deg);
+	}
+	100% {
+		-webkit-transform: translate(-50%, -50%) rotateZ(900deg);
+		        transform: translate(-50%, -50%) rotateZ(900deg);
+	}
+}
+
+@include keyframes(rightEyeAnimation) {
+	0% {
+		width: 2vh;
+		height: 2vh;
+	}
+	50% {
+		width: 2vh;
+		height: 2vh;
+	}
+	60% {
+		width: 2vh;
+		height: 2vh;
+	}
+	70% {
+		width: 2vh;
+		height: 2vh;
+	}
+	75% {
+		width: 2vh;
+		height: 2px;
+	}
+	80% {
+		width: 2vh;
+		height: 2vh;
+	}
+	90% {
+		width: 2vh;
+		height: 2vh;
+	}
+	100% {
+		width: 2vh;
+		height: 2vh;
+	}
+}
